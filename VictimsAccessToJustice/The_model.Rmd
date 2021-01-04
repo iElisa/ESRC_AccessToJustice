@@ -1,0 +1,80 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+### Proprotional Odds Model
+
+The response variables in this model follow a natural order of importance. We model the data using a Proportional Odds Regression. The general model is:
+
+\[
+log \left(\frac{p_1+ p_2 + ... + p_j} {p_{j+1} + ... + p_j}\right) = \beta_{0j} + \beta_1x_1 + ... +\beta_{p-1}x_{p-1} 
+\]
+
+Unlike the other explanatory variables $\beta_1x_1 + ... +\beta_{p-1}x_{p-1}$, the intercept term $\beta_{0j}$ depends on the category $j$ ( $j$ = 1, ..., J-1)
+
+An introduction to intercept and slope can be found <a href=https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:forms-of-linear-equations/x2f8bb11595b61c86:intro-to-slope-intercept-form/a/introduction-to-slope-intercept-form> here </a>
+
+<p>&nbsp;</p>
+
+
+### Assumptions
+
+* Assumption 1: the response variable should be measured at ordinal level.
+* Assumption 2: explanatory variable(s) can be continuous, categorical (including dichotomous) or ordinal, but ordinal explanatory variables must be treated as either continuous or categorical.
+* Assumption 3: multicollinearity should not be present.
+* Assumption 4: having proportional odds, which means that each explanatory variable has an identical effect at each cumulative split of the ordinal response variables.
+
+
+Further information about this model can be found  <a href=https://en.wikipedia.org/wiki/Ordered_logit> here </a>
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Multinomial Logistic Regression Model
+
+Here we are modelling a response variable that follows a mutinomial distribution (more than two categories). The levels of the response don't follow a natural order of importance. 
+
+The general model can be written as:
+
+\[
+log \left(\frac{p_{j}} {p_{1}}\right) = \beta_{0j} + \beta_1x_1 + ... +\beta_{p-1}x_{p-1}
+\]
+
+j = 2, ..., J (J > 2 as first category functions as baseline/reference category)
+
+<p>&nbsp;</p>
+
+
+### Assumptions
+
+* Assumption 1: the response variable should follow a categorical distribution.
+* Assumption 2: explanatory variable(s) can be continuous, categorical (including dichotomous) or ordinal, but ordinal explanatory variables must be treated as either continuous or categorical.
+* Assumption 3: independence of observations.
+* Assumption 4: multicollinearity should not be present.
+* Assumption 5: linearity between any continuous independent variables and the logit transformation of the dependent variable. (Not applicable here as no continuous predictors)
+
+Further information about this model can be found  <a href=https://en.wikipedia.org/wiki/Multinomial_logistic_regression> here </a>
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+
+### (Ordinal) Ridge Regression Model
+
+In this model we are tackling the overfitting that arises from the violation of the assumption 3 in the proprotional odds model by performing regularization. In other words, we reduce model complexity. To control variance, we try to regularise the regression coefficients by adding a penalty term: this controls the size of the coefficients.
+
+Further information about regularisation can be found  <a href=https://en.wikipedia.org/wiki/Regularization_(mathematics)> here </a> whereas details on ridge regression can be found <a href=https://en.wikipedia.org/wiki/Tikhonov_regularization> here </a>
+
+Further information about this model, please see Faisal M. Zahid & Shahla Ramzan (2012) 'Ordinal ridge regression with categorical predictors', Journal of Applied Statistics, 39:1, 161-171
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________
+
+

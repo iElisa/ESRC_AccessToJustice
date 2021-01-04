@@ -1,0 +1,59 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+## Sidebar on the left
+
+In this part of the app, you have six boxes.
+* CJS VARIABLE allows you to choose one variable of interest related to the measurement of the Criminal Justice System (CJS)
+* CRIME REPORTED TO POLICE (did police know about the incident?) allows you to select victims who reported or not the incident to police.
+* VICTIM'S SEX allows you to select a group of victims based on their sex. You can choose one or all options.
+* VICTIM'S RACE allows you to select a group of victims based on their race. You can choose one, some or all options.
+* VICTIM'S INCOME allows you to select a group of victims based on their income. You can choose one, some or all options.
+* VICTIM'S GEOGRAPHICAL AREA allows you to select a group of victims based on their geographical area. You can choose one, some or all options.
+
+## How to use it 
+
+You can operate different levels of subsetting, so that you can have a specific group of victims that you are interested in.
+The app produces two plots:
+1. based on a CJS variable (sentiment), this plot shows an averaged level of confidence/statisfaction across the years. The dotted line represent the confidence intervals. 
+2. based on the same CJS variable (sentiment), this plot shows how each (averaged) level of the variable changes across the years. 
+
+Further information about confidence intervals can be found  <a href=https://en.wikipedia.org/wiki/Confidence_interval> here </a>
+
+Some suggestions: 
+* 1980s tend to be poorly populated. 
+* Variables starting with "How good a job...?" tend to be associated with the 1990s and early 2000s.
+* Variables starting with "How confident...?" or "How much do you agree or disagree...?" tend to be associated with the 2000s.
+
+### Error messages
+
+The most probable cause of an error message is that the chosen combination of variables/years results in an empty dataframe. You can increase the number of years or try a different combination of variables. This should solve the issue. 
+If the dotted lines (confidence interval) are not displayed, this might be due to the fact they are too large and not captured in the plot box. 
+
+
+
+## Levels of CJS variables
+
+* CJS variable with 5 levels: 
+
+"very poor" = 1; 
+"poor" = 2;
+"fair" = 3; 
+"good" = 4;
+"excellent" = 5.
+
+* CJS variable with 4 levels: 
+
+"not at all" = 1;
+"not very" = 2;
+"fairly" = 3;
+"very" = 4.
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

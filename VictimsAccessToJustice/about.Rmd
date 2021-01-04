@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This ShinyApp has been developed as part of a project tiled: "Victims’ Access to Justice through English Criminal Courts, 1675 to the present". This has been funded by the Economic and Social Research Council (grant n. ES/R006962/1). Further information regarding the project can be found at: <a href=http://esrcvictims.org>  ESRC Victims' Access to Justice Project </a>
+
+This app has been developed as part of the Impact Acceleration Award (DT04308), University of Essex.
+
+The team working on this tool are:
+
+* Dr Elisa Impara - University of Essex (statistical development and ShinyApp construction)
+* <a href=https://www.essex.ac.uk/people/coxpa93003/pamela-cox>  Prof Pam Cox </a>- University of Essex (project principal investigator)
+
+The scripts used for this app are available on <a href=https://github.com/iElisa>  Github </a>.
+
+Special thanks to Mr Christopher Corsia and Dr Andrea Ingianni for their feedback, help and advice. 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

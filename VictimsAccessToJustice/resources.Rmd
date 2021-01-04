@@ -1,0 +1,47 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+* Brown K.J. and Gordon F. (2019) 'Older victims of crime: Vulnerability, resilience and access to procedural justice', International Review of Victimology, 25(2):201-221.
+
+* Commissioner for Victims and Witnesses (2010) 'The poor relation: victims in the criminal justice system', London: Ministry of Justice.
+
+* Cox, P. and Godfrey, B. (2019) 'Editors’ Introduction: Access to Justice: Historical Approaches to Victims of Crime'. Societies (special issue) 9:4, pp.1-2.
+
+* Farrell, G., Tilley, N. and Tseloni, A. (2014) 'Why the crime drop? Why crime rates fall and why they don’t', Crime and Justice: A Review of Research, 43, pp. 421-490.
+
+* Farrall, S. (2013) ‘Long Term Trajectories of Crime in the UK, 1982-2013’. Data and syntax publicly available from UK Data Archive, Study Number 7875.
+
+* Gray, E., Grasso, M., Farrall, S., Jennings, W. and Hay, C. (2019) 'Political Socialization, Worry about Crime and Antisocial Behaviour: An Analysis of Age, Period and Cohort Effects', British Journal of Criminology, 59:2, pp. 435–460.
+
+* Hough, M. and Sato, M. (2011) 'Trust in justice: Why it is important for criminal policy, and how it can be measured: Final Report of the Euro-Justis project', Helsinki: HEUNI.
+
+* Jennings, W., Gray, E., Hay, C. and Farrall, S. (2015), ‘Collating Longitudinal Data on Crime, Victimisation and Social Attitudes in England and Wales: A New Resource for Exploring Long-term Trends in Crime’, British Journal of Criminology, 55: 1005–1015.
+
+* McGlynn, C. and Westmarland, N. (2019) 'Kaleidoscopic Justice: Sexual Violence and Victim-Survivors’ Perceptions of Justice', Social & Legal Studies, 28(2):179-201. 
+
+* Miers, D. (2019) 'Victims, Criminal Justice and State Compensation', Societies, 9, 29.
+
+* Pease, K., Ignatans, D. and Batty, L. (2018). 'Whatever happened to repeat victimisation?. Crime Prevention and Community Safety, 20(4), pp.256-267
+
+* Shapland, J., Willmore, P. and and Duff, P. (1985) 'Victims and the Criminal Justice System'. London: Gower.
+
+* Smith, D. (2010) 'Public confidence in the criminal justice system: Findings from the British Crime Survey 2002/03 to 2007/08'. Ministry of Justice Research Series 16/10. London: Ministry of Justice.
+
+* Tseloni A. and Tilley, N. (2016) 'Choosing and using statistical sources in criminology – what can the Crime Survey for England and Wales tell us?',  Legal Information Management, 16 (2), pp. 78-90.
+
+* Tseloni, A. and Pease, K. (2015) 'Area and individual differences in personal crime victimization incidence: The role of individual, lifestyle/routine activities and contextual predictors', International Review of Victimology, 21 (1), pp. 3-29.
+
+* Tseloni, A. (2006) 'Multilevel modeling of the number of property crimes: household and area effects', Journal of the Royal Statistical Society: Series A (Statistics in Society), 169 (2), pp. 205-233.
+
+* Van de Walle, S. (2009) 'Confidence in the CJS: does experience count?' British Journal of Criminology, 59:3, pp. 384-398.
+
+* Walklate, S. (2012) 'Courting Compassion: Victims, Policy, and the Question of Justice', The Howard Journal of Criminal Justice, Vol. 51, Issue 2, pp. 109-121.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

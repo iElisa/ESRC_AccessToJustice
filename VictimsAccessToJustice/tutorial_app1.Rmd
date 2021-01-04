@@ -1,0 +1,107 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+## Sidebar on the left
+
+In this part of the app, you have three boxes.
+* YEAR BOX allows you to select as many years as you wish. However, NB: you might select a combination of years that results in an not so populated dataframe.
+* CJS VARIABLES allows you to choose one variable of interest related to the measurement of the Criminal Justice System (CJS)
+* DEMOGRAPHIC VARIABLES allows you to choose one variable describing a series of socio-demographic traits.
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+## How to use it 
+
+Users can choose a variable measuring confidence and satisfaction with the CJS and, based on the years, assess the frequency distribution for variable of interest. 
+The app produces a stacked barchart, where users can cross attitudes towards the CJS with a variety of demographic traits.
+Each bar represents the levels of the chosen CJS variable. Each bar is composed of a number of sub-bars: these correspond to the levels of a secondary categorical variables. 
+The total length of each stacked shows you how the secondary group contributes to the total.
+
+For further information about stacked barchart see <a href=http://seeingdata.org/taketime/inside-the-chart-stacked-bar-chart/> here </a>
+
+<p>&nbsp;</p>
+
+Some suggestions: 
+* 1980s tend to be poorly populated. 
+* Variables starting with "How good a job...?" tend to be associated with the 1990s and early 2000s.
+* Variables starting with "How confident...?" or "How much do you agree or disagree...?" tend to be associated with the 2000s.
+* If your plot displays mainly NAs, try to change the years.
+* Always make sure to check the values on the y-axis and check how its frequency changes. 
+* Also, it is worth to monitor the amount of NAs: big increase and no difference in the other levels is likely to indicate that variable of interest is not present on that particular year.
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Error messages
+
+The most probable cause of an error message is that the chosen combination of variables/years results in an empty dataframe. You can increase the number of years or try a different combination of variables. This should solve the issue. 
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Variable description (CJS Variables)
+
+* with 5 levels - "very poor", "poor", "fair", "good", "excellent"
+
+"How good a job do you think the CPS are doing?" 
+
+"How good a job do you think judges are doing?" 
+
+"How good a job do you think magistrates are doing?" 
+
+"How good a job do you think the probation services are doing?"
+
+"How good a job do you think the juvenile courts are doing?"
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+* with 4 levels - "not at all", "not very", "fairly", "very"
+
+"How confident are you Crown Prosecution Service is effective at prosecuting?"
+
+"How confident are you Courts are dealing with cases promptly?"
+
+"How confident are you Courts are effective at giving punishments?"
+
+"How confident are you - Criminal Justice System as a whole is effective?"
+
+"How much do you agree or disagree that the Criminal Justice System gives victims and witnesses the support they need?"
+
+"How confident are you that the Criminal Justice System as a whole is fair?"
+
+"How confident you are that CJS is effective in bringing people to justice?"
+
+"How confident are you that the CJS meets the needs of victim?"
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Variable description (Demographic Variables)
+
+sex = "male", "female"
+
+race = "white", "black", "asian", "other
+
+age = "under 25", "26-39", "40-59", "60-79", "over 80"
+
+education level = high", "A-levels", "GCSE", "other/no"
+
+income = "low", "mid", "top"
+
+work status = "carer", "FT", "in education", "other", "PT", "retired", "sick", "unemployed/unpaid work"
+
+marital status = "divorced", "in relationship", "separated", "single", "widowed"
+
+inner/non-inner city = "inner", "non-inner"
+
+geographical location = "north east", "north west", "Yorks&Humberside", "east midlands", "west midlands", "east of England", "London", "south east", "south west", "Wales", "Scotland"
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

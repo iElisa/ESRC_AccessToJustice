@@ -1,0 +1,87 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Sidebar on the left
+
+In this part of the app, you have four boxes.
+* YEAR BOX allows you to select as many years as you wish. However, NB: you might select a combination of years that results in an not so populated dataframe.
+* CRIME REPORTED TO POLICE (did police know about the incident?) allows you to select victims who reported or not the incident to police.
+* OFFENCE TYPE allows you to select the type of crime you are most intersted in. 
+* DEMOGRAPHIC VARIABLES allows you to choose one variable describing a series of socio-demographic traits.
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+## How to use it 
+
+Users can choose a variable indicating the type of offence endured by victims and choose the years you are interested in.
+The app produces a stacked barchart, where users can cross this information with a variety of demographic traits and whether the offence was reported.
+Each bar represents the levels of the crime variable. Each bar is composed of a number of sub-bars: these correspond to the levels of a secondary categorical variables. 
+The total length of each stacked shows you how the secondary group contributes to the total.
+
+For further information about stacked barchart see <a href=http://seeingdata.org/taketime/inside-the-chart-stacked-bar-chart/> here </a>
+
+<p>&nbsp;</p>
+
+Some suggestions: 
+* 1980s tend to be poorly populated. 
+* If your plot displays mainly NAs, try to change the years.
+* Always make sure to check the values on the y-axis and check how its frequency changes. 
+* Also, it is worth to monitor the amount of NAs: big increase and no difference in the other levels is likely to indicate that variable of interest is not present on that particular year.
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Error messages
+
+The most probable cause of an error message is that the chosen combination of variables/years results in an empty dataframe. You can increase the number of years or try a different combination of variables. This should solve the issue. 
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+
+### Variable description (Demographic Variables)
+
+sex = "male", "female"
+
+race = "white", "black", "asian", "other
+
+age = "under 25", "26-39", "40-59", "60-79", "over 80"
+
+education level = high", "A-levels", "GCSE", "other/no"
+
+income = "low", "mid", "top"
+
+work status = "carer", "FT", "in education", "other", "PT", "retired", "sick", "unemployed/unpaid work"
+
+marital status = "divorced", "in relationship", "separated", "single", "widowed"
+
+inner/non-inner city = "inner", "non-inner"
+
+geographical location = "north east", "north west", "Yorks&Humberside", "east midlands", "west midlands", "east of England", "London", "south east", "south west", "Wales", "Scotland"
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+### Crime Variables
+
+crime being reported to police = "no", "yes"
+
+victim of bulglary 
+
+victim of property crime 
+
+victim of vehicle crime
+
+victim of violent crime
+
+victim of sex crime 
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

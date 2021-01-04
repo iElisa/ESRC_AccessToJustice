@@ -1,0 +1,24 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+### The original dataset
+
+The CSEW is one of the largest-scale social research surveys conducted in England and Wales. It follows a complex, multi-stratified sampling design. It started in 1982 and until 2001, it was conducted on a two/four-yearly interval. Subsequently, it became annual. Significant methodological changes were implemented in 2001: sample size was increased and the survey moved to continuous fieldwork with a different reference period. The CSEW is primarily a victimisation survey: respondents are asked about their experiences of crime (e.g property, personal, violent crimes, etc), independently from whether these have been reported to the police or not. Other than providing estimates of victimisation trends, the survey is also concerned with the collection of respondents’ experiences of police and the CJS in terms of performance and attitudes, along with measuring attitudes towards imprisonment. Whereas, questions related to the police have been constant throughout the years, questions on the CJS have been introduced slowly, then reduced and, later, re-introduced. 
+
+For any further details regarding the CSEW, please visit: <a href=https://www.ukdataservice.ac.uk> www.ukdataservice.ac.uk </a>
+
+
+### The dataset used for this app
+
+For the purpose of our project, we have compiled a special datatset that merges and appends a selection of variables (measuring victimisation and attitudes towards the Criminal Justice System) extracted from the Crime Survey for England and Wales (CSEW). Further information regarding this special datatset can be found at: <a href=https://beta.ukdataservice.ac.uk/datacatalogue/studies/study?id=8716>  Impara, E. & Cox, P. (2020). 'Aggregated Crime Survey for England and Wales, 1982-2017, with Access to Justice Focus'. [data collection]. Office for National Statistics, [original data producer(s)]. Office for National Statistics. SN: 8716 </a>  
+
+For the purpose of this app, the dataset was subsetted to include only victims and a smaller selection of variables.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

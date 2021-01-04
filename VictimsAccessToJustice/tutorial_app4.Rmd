@@ -1,0 +1,129 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+### Sidebar on the left
+
+In this part of the app, you have four boxes and one slider input.
+* YEAR BOX allows you to select as many years as you wish. However, NB: you might select a combination of years that results in an empty dataframe. Inevitably this will results in an error.
+* CJS VARIABLE allows you to choose one variable of interest related to the measurement of the Criminal Justice System (CJS). 
+* CRIME VARIABLES allows you to include a series of variables related to victimisation. You can include as many as you want. 
+* DEMOGRAPHIC VARIABLES allows you to include a series of variables depicting socio-ecomical traits. You can include as many as you want.
+* NUMBER OF CLUSTERS allows you to choose how many clusters you wish to compute. 
+
+NB: due to the functionality of the algorithm (which takes into account both numrical and nominal variables) the variable "n. of incidents" in embedded in the app. The output will always display this variable, which measures the average number of incidents per cluster. 
+
+### The output
+
+The output is a table, where each row corresponds to a cluster and each column corresponds to the chosen variable. Rows (aka clusters) display the characteristics of the centroid (or representative profile) for the cluster. For example:
+
+ Cluster | Reported to police | Number of crimes | Victim's Sex | Victim's Race | Burglary | Confidence in the CJS |
+| ---------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------|
+| $1$ | $no$ | $2.39$ | $female$ | $white$ | $yes$ | $fairly$ | 
+| $2$ | $yes$ | $1.06$ | $female$ | $white$ | $no$ | $not$ $very$ | 
+| $3$ | $no$ | $3.41$ | $male$ | $white$ | $no$ | $very$ | 
+
+In cluster 1, the mode value (most recurrent value) for reported to police is "no", the mean for number of crimes is 2.39 crimes, the mode value for sex is "female", the mode value for race is white, the mode value for burglary is "yes", the mode value for confidence is "fairly". However, cluster one also contains male victims, victims who reported the crime to police, victims who belong to an ethnic minority, victims who did not experience burglary and who are not fairly confident. The centroid is simply the most representative profile for this particular cluster. 
+
+
+### Suggestions
+
+* 1980s tend to be poorly populated. 
+* Variables starting with "How good a job...?" tend to be associated with the 1990s and early 2000s.
+* Variables starting with "How confident...?" or "How much do you agree or disagree...?" tend to be associated with the 2000s.
+* The optimal number of clusters is usually computed using a technique called "Elbow Method". For the purpurpose of this app, this method is not included, but you can play around with the number of clusters. Start with 5-10 and then increase if necessary. When clusters start looking very similar, decrease the number.
+
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________
+
+### Error messages
+
+The most probable cause of an error message is that the chosen combination of variables/years results in an empty dataframe. You can increase the number of years or try a different combination of variables. This should solve the issue. 
+
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________
+### Variable description (CJS Variables)
+
+The response variable is a choice among the following variables:
+
+* with 5 levels - "very poor", "poor", "fair", "good", "excellent" 
+
+"How good a job do you think the CPS are doing?" ("jobcps")
+
+"How good a job do you think judges are doing?" ("jobjud")
+
+"How good a job do you think magistrates are doing?" ("jobmag")
+
+"How good a job do you think the probation services are doing?" ("jobprob")
+
+"How good a job do you think the juvenile courts are doing?" ("jobjuv")
+
+<p>&nbsp;</p>
+________________________________________________________________________________________________________________________________________________________________
+
+
+* with 4 levels - "not at all", "not very", "fairly", "very"
+
+"How confident are you Crown Prosecution Service is effective at prosecuting?" ("cjscpsb")
+
+"How confident are you Courts are dealing with cases promptly?" ("cjscrt2a")
+
+"How confident are you Courts are effective at giving punishments?" ("cjscrt2b")
+
+"How confident are you - Criminal Justice System as a whole is effective?" ("cjsovb1")
+
+"How much do you agree or disagree that the Criminal Justice System gives victims and witnesses the support they need?" ("fairatt1")
+
+"How confident are you that the Criminal Justice System as a whole is fair?" ("fairova1")
+
+"How confident you are that CJS is effective in bringing people to justice?" ("confoff")
+
+"How confident are you that the CJS meets the needs of victim?" ("confvict")
+
+<p>&nbsp;</p>
+______________________________________________________________________________________________________________
+
+### Variable description (Demographic Variables)
+
+sex ("sex") = "male", "female" 
+
+race ("recode_race") = "white", "black", "asian", "other
+
+age ("recode_age") = "under 25", "26-39", "40-59", "60-79", "over 80"
+
+education level ("recode_educat3") = high", "A-levels", "GCSE", "other/no"
+
+income ("recode_income") = "low", "mid", "top"
+
+gepgraphical location ("gor") = "north east", "north west", "Yorks&Humberside", "east midlands", "west midlands", "east of England", "London", "south east", "south west", "Wales", "Scotland"
+
+
+### Variable description (Crime Variables)
+
+n. of crimes ("ncrime1") = continuous value, embedded in clustering execution
+
+crime being reported to police ("recode_reported) = "no", "yes"
+
+victim of bulglary ("victim_bgl") = "no", "yes"
+
+victim of property crime ("victim_prp") = "no", "yes"
+
+victim of vehicle crime ("victim_veh") = "no", "yes"
+
+victim of violent crime ("victim_vio") = "no", "yes"
+
+victim of sex crime ("victim_vio2") = "no", "yes"
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+

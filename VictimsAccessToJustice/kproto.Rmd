@@ -1,0 +1,32 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+In this app, we are performing clustering analysis. We're trying to create groups of individuals who are similar based on a series of characteristics (e.g. their responses to confidence in the CJS, their socia-demographic traits, etc...): ultimately, we aim to have groups that are dissimilar from each other, but whose members (within each group) are quite similar. Clustering is an unsupervised-learning technique, where no a priori labels (output) are given to the data and the algorithm is trained to learn how to partition and group the data.
+
+Clusters in this app are calculated using a K-prototype algorithm. This particular clustering algorithm partions data based on a combination of numerical and nominal values:
+
+\[
+E = \sum_{i=1}^{n} \sum_{j=1}^{k} u_{ij}d(x_i, \mu_j)
+\]
+
+where: $x_i$ i = 1, ..., n are the observations in the sample (e.g. victim respondents); $\mu_j$ j = 1, ... , k represents the cluster prototype observations; $u_{ij}$ are the elements of the binary partition matrix $U_{nxk}$ 
+and $E$ represents the distance function. This is given by weighted sum of Euclidean distance between two points and a matching distance. The algorithm computes means (for numerical variables) and modes (for nominal variables), creating $k$ clusters where individuals in each clusters are likely to share similar traits. 
+
+Further information about this algorithm can be found  <a href=https://cran.r-project.org/web/packages/clustMixType/clustMixType.pdf> here </a> whereas further details about clustering can be found <a href=https://en.wikipedia.org/wiki/Cluster_analysis> here </a>
+
+For applied and theoretical examples of k-prototype, please refer to the following articles:
+
+* Cox, P., Impara, E., Lamont, R. and Walklate, S. (2020) 'Victims’ access to justice: a cluster analysis of victimisation survey data'. The British Crime Journal, SUBMITTED.
+* D’Amico, M., Frosini, P. & Landi, C. (2006) Using matching distance in size theory: A survey, International Journal of Imaging Systems and Technology, 16:5, pp. 154-161.
+* Huang, Z. (1998) "Extensions to the k-Means Algorithm for Clustering Large Data Sets with Categorical Values", Data Mining and Knowledge Discovery, vol. 2, no. 3, pp. 283-304.
+* Szepannek, G. (2018) ‘clustMixType: User-Friendly Clustering of Mixed-Type Data in R’, The R Journal 10:2, 200-208. 
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+____________________________________________________________________________________________________________________________________________________________________________

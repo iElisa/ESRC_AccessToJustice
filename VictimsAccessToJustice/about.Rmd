@@ -12,7 +12,7 @@ The team working on this tool are:
 * Dr Elisa Impara - University of Essex (statistical development and ShinyApp construction)
 * <a href=https://www.essex.ac.uk/people/coxpa93003/pamela-cox>  Prof Pam Cox </a>- University of Essex (project principal investigator)
 
-The scripts used for this app are available on <a href=https://github.com/iElisa>  Github </a>.
+The scripts used for this app are available on <a href=https://github.com/iElisa/ESRC_AccessToJustice>  Github </a>.
 
 Special thanks to Mr Christopher Corsia and Dr Andrea Ingianni for their feedback, help and advice. 
 <p>&nbsp;</p>
